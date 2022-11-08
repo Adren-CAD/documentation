@@ -1,4 +1,4 @@
-### Using ESX Functions with FiveM JS
+#### Using ESX Functions with FiveM JS
 
 [Example Resource](https://github.com/Adren-CAD/esx-javascript-examples)  
 [Forum Thread](https://forum.cfx.re/t/esx-js-how-to-esx-with-javascript/1604792)
@@ -6,31 +6,30 @@
 Recently I've been writing all of my scripts in JS, with FiveM the main economy framework is ESX. Writing ESX functions inside of JS is very easy and today Im going to show you how to do it!
 Calling Shared Object.
 
+###### Calling Shared Object.
 
-#### Calling Shared Object.
-
-JS:
+**JS**:
 ```
 let ESX = null;
 
 emit("esx:getSharedObject", (obj) => ESX = obj);
 ```
-LUA:
+**LUA**:
 ```
 ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 ```
-##### Client-
+####### Client-
 
-JS:
+**JS**:
 ```
 let ESX = null;
 
 emit("esx:getSharedObject", (obj) => ESX = obj);
 ```
 
-LUA:
+**LUA**:
 ```
 ESX = nil
 
@@ -44,15 +43,15 @@ end)
 
 Here you can use client functions like ESX.ShowNotification, which is the same for LUA and JS.
 
-#### Getting a players cash.
+##### Getting a players cash.
 
-JS:
+**JS**:
 ```
 let xPlayer = ESX.GetPlayerFromId(source);
 let cash = xPlayer.getMoney();
 console.log(cash);
 ```
-LUA:
+**LUA**:
 ```
 local xPlayer = ESX.GetPlayerFromId(source)
 local cash = xPlayer.getMoney()
@@ -60,9 +59,9 @@ local cash = xPlayer.getMoney()
 print(cash)
 ```
 
-#### Creating a Menu.
+##### Creating a Menu.
 
-JS:
+**JS**:
 ```
 ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'menuname', {
   title: 'Here, the menu title',
