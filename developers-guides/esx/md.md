@@ -1,14 +1,14 @@
-<h1>Using ESX Functions with FiveM JS</h1>
+#Using ESX Functions with FiveM JS
 
-<a>Forum Thread</a>
+[Forum Thread]()
 
-<p>Recently I've been writing all of my scripts in JS, with FiveM the main economy framework is ESX. Writing ESX functions inside of JS is very easy and today Im going to show you how to do it!
-Calling Shared Object.</p>
+Recently I've been writing all of my scripts in JS, with FiveM the main economy framework is ESX. Writing ESX functions inside of JS is very easy and today Im going to show you how to do it!
+Calling Shared Object.
 
 
-<h3>Calling Shared Object.</h3>
-<h3>Getting a players cash.</h3>
-<h3>Creating a Menu.</h3>
+###Calling Shared Object.
+###Getting a players cash.
+###Creating a Menu.
 
 JS:
 let ESX = null;
