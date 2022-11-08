@@ -1,6 +1,6 @@
 ### Using ESX Functions with FiveM JS
 
-[Forum Thread]()
+[Forum Thread]() [Example Resource]()
 
 Recently I've been writing all of my scripts in JS, with FiveM the main economy framework is ESX. Writing ESX functions inside of JS is very easy and today Im going to show you how to do it!
 Calling Shared Object.
