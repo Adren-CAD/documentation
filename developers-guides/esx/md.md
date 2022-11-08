@@ -8,6 +8,8 @@ Calling Shared Object.
 
 ###### Calling Shared Object.
 
+###### Server-
+
 **JS**:
 ```
 let ESX = null;
