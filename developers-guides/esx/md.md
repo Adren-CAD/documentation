@@ -11,8 +11,10 @@ Calling Shared Object.
 ### Creating a Menu.
 
 JS:
+```
 let ESX = null;
 emit("esx:getSharedObject", (obj) => ESX = obj);
+```
 LUA:
 ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
