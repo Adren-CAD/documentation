@@ -51,6 +51,7 @@ Here you can use client functions like ESX.ShowNotification, which is the same f
 ```
 let xPlayer = ESX.GetPlayerFromId(source);
 let cash = xPlayer.getMoney();
+
 console.log(cash);
 ```
 **LUA**:
