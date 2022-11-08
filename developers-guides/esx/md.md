@@ -7,8 +7,6 @@ Calling Shared Object.
 
 
 #### Calling Shared Object.
-#### Getting a players cash.
-#### Creating a Menu.
 
 JS:
 ```
@@ -42,7 +40,7 @@ end)
 
 Here you can use client functions like ESX.ShowNotification, which is the same for LUA and JS.
 
-Getting a xPlayer's cash (server)
+#### Getting a players cash.
 
 JS:
 ```
@@ -56,7 +54,8 @@ local xPlayer = ESX.GetPlayerFromId(source)
 local cash = xPlayer.getMoney()
 print(cash)
 ```
-Creating a Menu (client)
+
+#### Creating a Menu.
 
 JS:
 ```
