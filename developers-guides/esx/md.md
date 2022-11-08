@@ -11,18 +11,21 @@ Calling Shared Object.
 JS:
 ```
 let ESX = null;
+
 emit("esx:getSharedObject", (obj) => ESX = obj);
 ```
 LUA:
 ```
 ESX = nil
+
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 ```
-Client-
+##### Client-
 
 JS:
 ```
 let ESX = null;
+
 emit("esx:getSharedObject", (obj) => ESX = obj);
 ```
 
@@ -31,10 +34,10 @@ LUA:
 ESX = nil
 
 Citizen.CreateThread(function()
-while ESX == nil do
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-Citizen.Wait(0)
-end
+  while ESX == nil do
+    TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+    Citizen.Wait(0)
+  end
 end)
 ```
 
@@ -52,6 +55,7 @@ LUA:
 ```
 local xPlayer = ESX.GetPlayerFromId(source)
 local cash = xPlayer.getMoney()
+
 print(cash)
 ```
 
